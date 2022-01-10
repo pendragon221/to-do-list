@@ -1,0 +1,21 @@
+.task__container {
+  width: 600px;
+  margin: 10px 0;
+  border: 2px solid teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task__header {
+  margin: 10px 5px;
+}
+
+.task__content {
+  margin: 10px 5px;
+}
+
+.delete__button {
+  float: right;
+  margin-right: 5px;
+}
