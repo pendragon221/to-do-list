@@ -2,15 +2,15 @@ import React from 'react'
 import styles from './Task.module.css'
 
 
-const Task = () => {
+const Task = ({ task }) => {
     return (
         <div className={styles.task__container}>
             <div>
                 <div className={styles.task__header}>
-                    <p>Task 1</p>
+                    <p>{task.id}. {task.header}</p>
                 </div>
                 <div className={styles.task__content}>
-                    <p>Make dinner</p>
+                    <p>{task.content}</p>
                 </div>
             </div>
             <div className={styles.delete__button}>
