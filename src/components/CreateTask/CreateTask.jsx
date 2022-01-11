@@ -1,9 +1,9 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import MyButton from '../UI/button/MyButton'
 import MyInput from '../UI/input/MyInput'
 import styles from './CreateTask.module.css'
 
-const CreateTask = ({ tasks, setTask }) => {
+const CreateTask = ({ tasks, setTasks }) => {
 
     const [header, setHeader] = useState('')
     const [content, setContent] = useState('')
@@ -11,11 +11,11 @@ const CreateTask = ({ tasks, setTask }) => {
     const onAddPost = (e) => {
         e.preventDefault()
         const newTask = {
-            id: tasks.length + 1,
+            id: Date.now(),
             header,
             content
         }
-        setTask([...tasks, newTask])
+        setTasks([...tasks, newTask])
         setHeader('')
         setContent('')
     }

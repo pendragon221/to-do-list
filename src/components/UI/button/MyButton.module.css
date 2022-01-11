@@ -1,7 +1,13 @@
 .myBtn {
-  width: 200px;
+  width: 150px;
   background: transparent;
   border: 2px solid teal;
   margin: 5px 0;
   padding: 10px;
+}
+.myBtn:hover {
+  cursor: pointer;
+}
+.myBtn:active {
+  background-color: #f0f0f0;
 }
